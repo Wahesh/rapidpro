@@ -9,7 +9,7 @@
   {% analytics_hook 'login' %}
 
   -blocktrans trimmed
-    Please sign in with your email address and password.
+    कृपया इमेल र पासवोर्ड प्रविष्ट गर्नुहोस् .
 
   %form#login-form(method="POST" action="/users/login/")
     -csrf_token
@@ -37,3 +37,7 @@
 
     .mt-6
       %input.button-primary(type="submit" value='{{_("Sign In")}}')
+
+      .mt-6.text-center
+    %footer
+      {{_(" Contact us at RapidPro@npl.ac for details. ")}}  # Custom footer text
